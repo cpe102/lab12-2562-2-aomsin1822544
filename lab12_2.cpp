@@ -54,7 +54,7 @@ int main()
          }
          cout <<"|";
             cout << "\n";    
-         }
+         }  
 
          for(int i=0;i<M+2;i++){
              cout <<"-";
