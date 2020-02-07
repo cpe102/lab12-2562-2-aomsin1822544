@@ -3,6 +3,7 @@
 using namespace std;
 
 void stat(const double[],int,double []);
+       
 
 int main()
 {
@@ -18,3 +19,30 @@ int main()
 }
 
 //Write definition of stat() here 
+void stat(const double A[],int N,double B[]){
+     float x,min,max,sum;
+      
+     for (int i=0;i<N;i++){
+      
+      B[0] += A[i]/N;
+      sum += pow(A[i],2);
+     }
+      B[1] = sqrt((sum/N)-pow(B[0],2));
+        for(int j=0;j<N;j++){
+		if(B[3]>A[j]){
+		B[3]=A[j];
+	}
+		if(B[2]<A[j]){
+			B[2]=A[j];
+		}
+	}
+
+
+
+ 
+	
+	
+}
+
+
+
